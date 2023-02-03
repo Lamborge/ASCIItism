@@ -1,14 +1,19 @@
 namespace ASCIItism
 {
-    using Terminal.Gui;
-
-
     public partial class InfoWin
     {
         public InfoWin()
         {
             InitializeComponent();
-            //button1.Clicked += () => MessageBox.Query("Hello", "Hello There!", "Ok");
         }
+
+        public Player player = new Player()
+        {
+                Nickname = "TestPlayer",
+                PosY = 0,
+                PosX = 0
+        };
+
+        public Location CurrentLocation;
     }
 }

@@ -56,7 +56,7 @@ namespace ASCIItism
             {
                 X = 1,
                 Y = 0,
-                Text = "Main"
+                Text = "Location"
             };
             ButtonPanelWindow.Add(MenuMainButton);
             MenuMainButton.Clicked += () => InitializeMainWindow();
@@ -86,7 +86,7 @@ namespace ASCIItism
         {
             Label MainLabel = new Label()
             {
-                Text = "Position: 0-0 Location: Spawn Type: Friendly",
+                Text = $"Position: {player.PosY}-{player.PosX} Location: {CurrentLocation.Name} Type: {CurrentLocation.Type}",
                 X = Pos.Center(),
                 Y = Pos.Bottom(ButtonPanelWindow)-2
             };
