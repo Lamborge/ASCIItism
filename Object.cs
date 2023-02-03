@@ -2,5 +2,5 @@
 
 public class Object
 {
-    
+    public string Name;
 }

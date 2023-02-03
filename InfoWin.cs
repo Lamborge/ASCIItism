@@ -14,6 +14,6 @@ namespace ASCIItism
                 PosX = 0
         };
 
-        public Location CurrentLocation;
+        public Location CurrentLocation = LocationsDB.Map[0,0];
     }
 }

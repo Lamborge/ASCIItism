@@ -121,7 +121,7 @@ namespace ASCIItism
             {
                 Y = 1,
                 X = 1,
-                Text = "Chat:"
+                Text = LocationsDB.Map[0,0].Name
             };
             BasicWindow.RemoveAll();
             BasicWindow.Add(Chat);
