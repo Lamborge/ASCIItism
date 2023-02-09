@@ -21,6 +21,9 @@
       <Compile Update="ChatWindow.cs">
         <DependentUpon>MainWin.cs</DependentUpon>
       </Compile>
+      <Compile Update="L0-0.cs">
+        <DependentUpon>LocationsDB.cs</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>
