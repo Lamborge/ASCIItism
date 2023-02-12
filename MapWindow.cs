@@ -6,6 +6,8 @@ public class MapWindow
 {
     public static void InitializeMapWindow(Window BasicWindow)
     {
+        BasicWindow.ColorScheme = MainWin.DefaultCS;
+        
         Label test_label = new Label()
         {
             Y = Pos.Center(),

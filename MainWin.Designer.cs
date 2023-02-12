@@ -15,6 +15,7 @@ namespace ASCIItism
         {
             Title = "ASCIItism";
             
+            
             InitializeButtonPanelWindow();
             InitializeBasicWindow();
         }
@@ -28,8 +29,7 @@ namespace ASCIItism
                 Y = Pos.Bottom(ButtonPanelWindow),
                 Width = Dim.Fill(),
                 Height = Dim.Fill(),
-                Border = new Border(){BorderStyle = BorderStyle.Double},
-                
+                ColorScheme = MainWin.DefaultCS
             };
 
             Label GreetingsLaber = new Label()
@@ -49,13 +49,16 @@ namespace ASCIItism
             {
                 X = 0,
                 Y = 0,
-                Width = Dim.Fill() - 1,
+                Width = Dim.Fill(),
                 Height = 3,
                 Border = new Border()
                 {
                     BorderStyle = BorderStyle.Rounded
-                }
+                },
+                ColorScheme = MainWin.DefaultCS
             };
+            
+            ButtonPanelWindow.ColorScheme = MainWin.DefaultCS;
 
             Button MenuMainButton = new Button()
             {

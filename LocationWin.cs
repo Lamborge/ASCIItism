@@ -8,6 +8,7 @@ public class LocationWin : Terminal.Gui.Window
     // Draw elements of Location Window in Basic Window
     public static void InitializeLocationWindow(Window BasicWindow)
     {
+        BasicWindow.ColorScheme = MainWin.DefaultCS;
         BasicWindow.Title =
             $"Position: {MainWin.player.PosY}-{MainWin.player.PosX}" +
             $"Location: {MainWin.CurrentLocation.Name}" +

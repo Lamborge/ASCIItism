@@ -6,6 +6,7 @@ public class ChatWindow
 {
     public static void InitializeChatWindow(Window BasicWindow)
     {
+        BasicWindow.ColorScheme = MainWin.DefaultCS;
         Label Chat = new Label()
         {
             Y = 1,
