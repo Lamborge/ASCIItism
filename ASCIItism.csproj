@@ -11,19 +11,4 @@
         <PackageReference Include="Terminal.Gui" Version="1.*" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Compile Update="LocationWin.cs">
-        <DependentUpon>MainWin.cs</DependentUpon>
-      </Compile>
-      <Compile Update="MapWindow.cs">
-        <DependentUpon>MainWin.cs</DependentUpon>
-      </Compile>
-      <Compile Update="ChatWindow.cs">
-        <DependentUpon>MainWin.cs</DependentUpon>
-      </Compile>
-      <Compile Update="L0-0.cs">
-        <DependentUpon>LocationsDB.cs</DependentUpon>
-      </Compile>
-    </ItemGroup>
-
 </Project>
