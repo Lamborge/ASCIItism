@@ -5,12 +5,6 @@ namespace ASCIItism;
 
 public static class DB
 {
-    public enum LocType
-    {
-        City,
-        Paceful,
-        PvP
-    }
 
     public enum PlayerClass
     {
@@ -25,5 +19,20 @@ public static class DB
         Food,
         Weapon,
         Material
+    }
+
+    // location && building code here
+    
+    public enum LocType
+    {
+        City,
+        Paceful,
+        PvP
+    }
+
+    public enum BuildType {
+        Shop,
+        Portal, // переход по локациям
+        House, // пустышка в которой может находится игрок, без интерактива какого либо
     }
 }

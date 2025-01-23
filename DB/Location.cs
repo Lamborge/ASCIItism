@@ -1,16 +1,40 @@
 ﻿namespace ASCIItism;
 
+using System.Text.Json;
 using static DB;
+
 
 public class Location
 {
-    public int PosX;
-    public int PosY;
-    
-    public string Name;
-    public LocType Type;
+    public int PosX { get; set; }
+    public int PosY { get; set; }
 
-    public Object[] Objects = new Object[] { };
+    public string Name { get; set; } = "локация";
+    public LocType Type { get; set; }
 
-    public List<Player> Players;
+    public Building[] Buildings { get; set; } = new Building[] { };
+
+    public List<Player> Players { get; set; } = new() { };
+
+
+    public void LocationInit()
+    {
+
+    }
+    // не работает
+    public Location LocationDeserialize(string locpath)
+    {
+
+        try
+        {
+            string jsonString = File.ReadAllText(locpath);
+            Location location = JsonSerializer.Deserialize<Location>(jsonString)!;
+            return location;
+        }
+        catch (System.Exception)
+        {
+            throw;
+        }
+    }
+
 }

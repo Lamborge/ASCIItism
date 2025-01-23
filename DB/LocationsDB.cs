@@ -8,7 +8,7 @@ public static class LocationsDB
             L0_0.l0_0
         },
         {
-            new Location(){Name = "Null"}
+            new Location(){Name = "Э'эрика"}
         }
     };
 }
