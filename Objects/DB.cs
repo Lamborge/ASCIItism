@@ -1,7 +1,7 @@
 using Terminal.Gui;
 using Attribute = System.Attribute;
 
-namespace ASCIItism;
+namespace ASCIItism.Objects;
 
 public static class DB
 {
@@ -14,6 +14,7 @@ public static class DB
         Gnome
     }
     
+    // TODO: refactor to separate classes in future
     public enum ItemType
     {
         Food,
@@ -29,10 +30,5 @@ public static class DB
         Paceful,
         PvP
     }
-
-    public enum BuildType {
-        Shop,
-        Portal, // переход по локациям
-        House, // пустышка в которой может находится игрок, без интерактива какого либо
-    }
+    
 }

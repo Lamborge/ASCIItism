@@ -1,6 +1,6 @@
 using Terminal.Gui;
 
-namespace ASCIItism;
+namespace ASCIItism.Windows;
 
 public class ButtonPanelWin : Window
 {

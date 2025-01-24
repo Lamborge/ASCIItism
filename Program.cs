@@ -1,4 +1,4 @@
-﻿using ASCIItism;
+﻿using ASCIItism.Windows;
 using Terminal.Gui;
 
 Application.Init();

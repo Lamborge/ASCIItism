@@ -1,7 +1,7 @@
 ﻿using Terminal.Gui;
-using static ASCIItism.MainWin;
+using static ASCIItism.Windows.MainWin;
 
-namespace ASCIItism;
+namespace ASCIItism.Windows;
 
 public static class LocationWin
 {
@@ -13,7 +13,7 @@ public static class LocationWin
         bWin.Title =
             $"Position: {player.CurrentLocation.PosX}-{player.CurrentLocation.PosY} " +
             $"Location: {player.CurrentLocation.Name} " +
-            $"Type: {Enum.GetName(player.CurrentLocation.Type)}"; // MainWin.player пока что костыль, тестовый игрок
+            $"Type: {Enum.GetName(player.CurrentLocation.LocType)}"; // MainWin.player пока что костыль, тестовый игрок
 
         Button TestBut = new Button()
         {
